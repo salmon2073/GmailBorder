@@ -1,0 +1,20 @@
+{
+    "name": "GmailBorder",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "Gmailの受信ボックスにて日付ごとに線を引く",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://mail.google.com/*"
+            ],
+            "js": [
+                "app.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "icons": {
+        "128": "icon.png"
+    }
+}
